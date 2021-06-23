@@ -15,8 +15,14 @@ sudo apt-get install powerline fonts-powerline
 # VIM
 sudo apt install vim
 
+# Terminator (terminal emulator)
+sudo apt-get install terminator
+
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+# Docker
+sudo snap install docker
 
 # Tweak Tool
 sudo add-apt-repository universe
