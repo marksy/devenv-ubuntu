@@ -18,6 +18,9 @@ sudo apt-get --assume-yes install vim
 # Terminator (terminal emulator)
 sudo apt-get --assume-yes install terminator
 
+# Node JS x.14
+sudo snap install node --channel=12/stable --classic
+
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i ~/google-chrome-stable_current_amd64.deb
@@ -25,6 +28,11 @@ rm ~/google-chrome-stable_current_amd64.deb
 
 # Docker
 sudo snap install docker
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+echo Docker requires log out to continue setting up.
 
 # Tweak Tool
 sudo add-apt-repository universe
@@ -67,11 +75,23 @@ sudo snap install flameshot
 # Webstorm
 sudo snap install webstorm --classic
 
+# Lossless Cut (mp4 editing)
+sudo snap install losslesscut
+
 # Visual Studio Code
 sudo snap install code --classic
 
 # VLC
 sudo snap install vlc
+
+# Webcam settings
+sudo add-apt-repository ppa:libv4l/ppa
+sudo apt-get update
+sudo apt-get --assume-yes install gtk-v4l
+
+sudo add-apt-repository ppa:pj-assis/ppa
+sudo apt-get update
+sudo apt-get --assume-yes install guvcview
 
 # Keybase (secure message / files)
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
