@@ -69,6 +69,9 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 
 sudo apt-get update && sudo apt-get --assume-yes install spotify-client
 
+# Postman API inspector
+sudo snap install postman
+
 # Flameshot (screen shot tool)
 sudo snap install flameshot
 
