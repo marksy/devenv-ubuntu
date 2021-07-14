@@ -21,6 +21,9 @@ sudo apt-get --assume-yes install terminator
 # Node JS x.14
 sudo snap install node --channel=12/stable --classic
 
+# NVM
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i ~/google-chrome-stable_current_amd64.deb
@@ -69,6 +72,9 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 
 sudo apt-get update && sudo apt-get --assume-yes install spotify-client
 
+# NetTools
+sudo apt-get --assume-yes install net-tools
+
 # Postman API inspector
 sudo snap install postman
 
@@ -80,6 +86,9 @@ sudo snap install webstorm --classic
 
 # Lossless Cut (mp4 editing)
 sudo snap install losslesscut
+
+# Signal (messages)
+sudo snap install signal-desktop
 
 # Visual Studio Code
 sudo snap install code --classic
